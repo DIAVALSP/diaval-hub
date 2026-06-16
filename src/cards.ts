@@ -44,19 +44,27 @@ export const CARDS: SystemCard[] = [
 
   // Dashboards DIAVAL
   {
+    id: 'enem',
+    icon: '🎓',
+    label: 'ENEM 2026',
+    description: 'Adesão à inscrição por URE e escola',
+    url: 'https://inscricao-enem-2026.vercel.app',
+    group: 'dashboards',
+  },
+  {
+    id: 'ppb2',
+    icon: '📝',
+    label: 'PP B2 — Cartões',
+    description: 'Leitura de cartões da Prova Paulista',
+    url: 'https://ppb2.vercel.app',
+    group: 'dashboards',
+  },
+  {
     id: 'copa',
     icon: '🏆',
     label: 'Copa da Escola',
     description: 'Ranking de escolas e turmas',
     url: 'https://copadaescola.vercel.app',
-    group: 'dashboards',
-  },
-  {
-    id: 'ppb1',
-    icon: '📝',
-    label: 'PP B1 — Cartões',
-    description: 'Leitura de cartões da Prova Paulista',
-    url: 'https://ppb1.vercel.app',
     group: 'dashboards',
   },
 
