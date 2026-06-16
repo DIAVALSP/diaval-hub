@@ -30,7 +30,7 @@ export function CalendarStrip() {
         </details>
       )}
       {upcoming.length > 0 && (
-        <details className="c-home-section c-home-section-cal">
+        <details open className="c-home-section c-home-section-cal">
           <summary className="c-home-section-summary">
             <h2 className="c-home-section-h">📅 Próximas avaliações</h2>
           </summary>
