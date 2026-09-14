@@ -64,13 +64,14 @@ export const CARDS: SystemCard[] = [
     group: 'dashboards',
   },
   {
-    id: 'copa',
-    icon: '🏆',
-    label: 'Copa da Escola',
-    description: 'Ranking de escolas e turmas',
-    url: 'https://copadaescola.vercel.app',
+    id: 'simulado-saresp-2ef',
+    icon: '📚',
+    label: 'Simulado SARESP 2º ano EF',
+    description: 'Resultados e boletins por URE, cidade e escola',
+    url: 'https://simulado-saresp-2ef.vercel.app',
     group: 'dashboards',
   },
+  // Copa da Escola saiu do portal em 14/09/2026 (pedido do Jeff). O app segue no ar em copadaescola.vercel.app.
 
   // Drive DIAVAL — pastas das avaliações 2026
   {
