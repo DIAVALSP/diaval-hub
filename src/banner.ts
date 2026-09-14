@@ -11,7 +11,7 @@ export interface Banner {
 export const BANNER: Banner = {
   icon: '💡',
   lines: [
-    'Acesse os resultados da Prova Paulista no BI — Escola Total! Defina as suas prioridades e o seu plano de ação.',
-    'Lembre-se: aprendizagens não consolidadas vão impactar negativamente os resultados do SARESP no final do ano.',
+    'Chegou a Jornada do Provão Paulista 2026! Mobilize as turmas do Ensino Médio rumo à universidade pública.',
+    'Aprendizagem, mobilização e ingresso no ensino superior: acompanhe a evolução da sua escola em cada etapa da jornada.',
   ],
 }

@@ -62,10 +62,10 @@ body {
   margin-bottom: 0;
 }
 
-/* Linha de baixo: Dashboards DIAVAL (3 cards) + SEDUC (3 cards) lado a lado, meio a meio */
+/* Linha de baixo: Dashboards DIAVAL (4 cards) + SEDUC (2 cards) lado a lado, na mesma linha */
 .c-home-top-row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: var(--sp-5);
   margin-bottom: var(--sp-5);
 }
@@ -85,15 +85,15 @@ body {
 }
 
 .c-home-section-seduc .c-home-grid {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .c-home-section-dashboards .c-home-grid {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .c-home-section-drive .c-home-grid {
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .c-home-card {
@@ -124,6 +124,39 @@ body {
 .c-home-card:focus-visible {
   outline: 2px solid var(--blue);
   outline-offset: 2px;
+}
+
+/* Card inativo: cinza, sem interação, com selo "em breve" */
+.c-home-card--disabled {
+  background: var(--gray-pale, #f1f2f4);
+  border-color: var(--gray-border, #d9dce1);
+  color: var(--text-muted, #8a8f98);
+  cursor: not-allowed;
+  filter: grayscale(1);
+  opacity: .7;
+}
+
+.c-home-card--disabled:hover,
+.c-home-card--disabled:focus-visible {
+  transform: none;
+  box-shadow: none;
+  background: var(--gray-pale, #f1f2f4);
+  border-color: var(--gray-border, #d9dce1);
+}
+
+.c-home-card--disabled .c-home-card-title {
+  color: var(--text-muted, #8a8f98);
+}
+
+.c-home-card-badge {
+  font-size: var(--fs-sm, .78rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: var(--text-muted, #8a8f98);
+  background: var(--gray-border, #e3e6ea);
+  border-radius: 999px;
+  padding: 2px 10px;
 }
 
 .c-home-card-icon {
@@ -311,6 +344,9 @@ details.c-home-section[open] .c-home-section-summary {
 
 .c-cal-recuperacao { border-left-color: var(--yellow-dark); }
 .c-cal-recuperacao .c-cal-tag { background: var(--yellow-light); color: var(--yellow-dark); }
+
+.c-cal-enem { border-left-color: var(--purple-dark); }
+.c-cal-enem .c-cal-tag { background: var(--purple-light); color: var(--purple-dark); }
 
 /* Eventos passados — mais discretos */
 .c-home-section-h-muted {

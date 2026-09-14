@@ -7,6 +7,7 @@ export type EventType =
   | 'diagnostica'
   | 'provao'
   | 'recuperacao'
+  | 'enem'
 
 export interface CalendarEvent {
   id: string
@@ -27,6 +28,7 @@ const EVENT_TYPE_LABEL: Record<EventType, string> = {
   diagnostica: 'Diagnóstica',
   provao: 'Provão Paulista',
   recuperacao: 'Recuperação',
+  enem: 'ENEM',
 }
 
 export function eventTypeLabel(type: EventType): string {
@@ -90,6 +92,14 @@ export const EVENTS: CalendarEvent[] = [
     end: '2026-06-26',
   },
   {
+    id: 'recuperacao-ago',
+    dateLabel: '3–7/ago',
+    title: '',
+    type: 'recuperacao',
+    start: '2026-08-03',
+    end: '2026-08-07',
+  },
+  {
     id: 'diagnostica-ago',
     dateLabel: '10/ago',
     title: '',
@@ -99,11 +109,11 @@ export const EVENTS: CalendarEvent[] = [
   },
   {
     id: 'olisp',
-    dateLabel: '24–28/ago',
+    dateLabel: '25–27/ago',
     title: '',
     type: 'olisp',
-    start: '2026-08-24',
-    end: '2026-08-28',
+    start: '2026-08-25',
+    end: '2026-08-27',
   },
   {
     id: 'pp-b3',
@@ -128,6 +138,14 @@ export const EVENTS: CalendarEvent[] = [
     type: 'provao',
     start: '2026-11-03',
     end: '2026-12-04',
+  },
+  {
+    id: 'enem',
+    dateLabel: '8 e 15/nov',
+    title: '',
+    type: 'enem',
+    start: '2026-11-08',
+    end: '2026-11-15',
   },
   {
     id: 'recuperacao',
