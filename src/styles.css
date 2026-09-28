@@ -65,7 +65,7 @@ body {
 /* Linha de baixo: Dashboards DIAVAL (4 cards) + SEDUC (2 cards) lado a lado, na mesma linha */
 .c-home-top-row {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: var(--sp-5);
   margin-bottom: var(--sp-5);
 }
@@ -85,11 +85,11 @@ body {
 }
 
 .c-home-section-seduc .c-home-grid {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .c-home-section-dashboards .c-home-grid {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .c-home-section-drive .c-home-grid {
