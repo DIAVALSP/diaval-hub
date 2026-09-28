@@ -14,9 +14,8 @@ export const BANNER: Banner = {
   icon: '🏁',
   lines: [
     'Faltam 30 dias para SARESP, Provão e ENEM!',
-    'É hora das últimas ações de mobilização, com eventos com universidades e universitários. ' +
-      'Confira onde cada estudante vai fazer o ENEM e organize a ida no dia da prova. Aplique o simulado, ' +
-      'dê as últimas dicas de estratégia de prova e reforce a redação: ela pesa no Provão da 3ª série e no ENEM. ' +
-      'Cada estudante presente faz diferença.',
+    'Agora é sprint final! 🚀 Traga universidades e universitários para inspirar a turma, confira com cada ' +
+      'estudante onde ele faz o ENEM, aplique o simulado, passe as últimas dicas de prova e capriche no treino ' +
+      'de redação. Meta da escola: ninguém fica de fora no dia da prova!',
   ],
 }
