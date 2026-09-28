@@ -64,14 +64,6 @@ export const CARDS: SystemCard[] = [
     url: 'https://simulado-saresp-2ef.vercel.app',
     group: 'dashboards',
   },
-  {
-    id: 'simulados-saresp-provao-enem',
-    icon: '🗂️',
-    label: 'Simulados SARESP, Provão e ENEM',
-    description: 'Cadernos, gabaritos e planilhas no Drive',
-    url: 'https://drive.google.com/drive/folders/1N3PaTaAPLhwg-mphLdrm3zy_rQSYFx5w',
-    group: 'dashboards',
-  },
   // Copa da Escola saiu do portal em 14/09/2026 (pedido do Jeff). O app segue no ar em copadaescola.vercel.app.
 
   // Drive DIAVAL — pastas das avaliações 2026
@@ -145,6 +137,14 @@ export const CARDS: SystemCard[] = [
     label: '9. SAEB',
     description: 'Pasta no Drive DIAVAL',
     url: 'https://drive.google.com/drive/folders/1JVk_XBgeLw5v6oUltSRQhByTNF5uRL1Q',
+    group: 'drive',
+  },
+  {
+    id: 'drive-simulados',
+    icon: '🗂️',
+    label: '10. Simulados SARESP, Provão e ENEM',
+    description: 'Pasta no Drive DIAVAL',
+    url: 'https://drive.google.com/drive/folders/1N3PaTaAPLhwg-mphLdrm3zy_rQSYFx5w',
     group: 'drive',
   },
 ]
