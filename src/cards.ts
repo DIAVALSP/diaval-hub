@@ -47,14 +47,7 @@ export const CARDS: SystemCard[] = [
     url: 'https://inscricao-enem-2026.vercel.app',
     group: 'dashboards',
   },
-  {
-    id: 'avd',
-    icon: '📝',
-    label: 'Avaliação Diagnóstica 2026.2',
-    description: 'Inserção de cartões-resposta por URE e escola',
-    url: 'https://aplicacao-avd2.vercel.app',
-    group: 'dashboards',
-  },
+  // Avaliação Diagnóstica 2026.2 saiu do portal em 28/09/2026 (pedido do Jeff). App segue em aplicacao-avd2.vercel.app.
   {
     id: 'jornada-provao-painel',
     icon: '🧭',
@@ -69,6 +62,14 @@ export const CARDS: SystemCard[] = [
     label: 'Simulado SARESP 2º ano EF',
     description: 'Resultados e boletins por URE, cidade e escola',
     url: 'https://simulado-saresp-2ef.vercel.app',
+    group: 'dashboards',
+  },
+  {
+    id: 'simulados-saresp-provao-enem',
+    icon: '🗂️',
+    label: 'Simulados SARESP, Provão e ENEM',
+    description: 'Cadernos, gabaritos e planilhas no Drive',
+    url: 'https://drive.google.com/drive/folders/1N3PaTaAPLhwg-mphLdrm3zy_rQSYFx5w',
     group: 'dashboards',
   },
   // Copa da Escola saiu do portal em 14/09/2026 (pedido do Jeff). O app segue no ar em copadaescola.vercel.app.
