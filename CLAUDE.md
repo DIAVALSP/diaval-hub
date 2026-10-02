@@ -7,13 +7,13 @@
 - Grupos (`GROUPS`): `seduc` ("SEDUC — Sistemas oficiais"), `dashboards` ("Dashboards DIAVAL"), `drive` ("Drive DIAVAL — Avaliações 2026").
 - `src/App.tsx`: no topo o grupo **drive**; embaixo, uma `.c-home-top-row` com **dashboards** (esquerda) e **seduc** (direita) lado a lado.
 - Layout em `src/styles.css`:
-  - `.c-home-top-row` = grid `1fr 1fr` (28/09: meio a meio).
-  - `.c-home-section-dashboards .c-home-grid` = 3 colunas · `.c-home-section-seduc` = 3 colunas → **dash=3 e sistemas=3 (2 cards + 1 vazio, pedido do Jeff) na mesma linha**, cards do mesmo tamanho.
+  - `.c-home-top-row` = grid `2fr 1fr` (02/10: voltou de meio a meio para 2/3 + 1/3, porque os dashboards viraram 4).
+  - `.c-home-section-dashboards .c-home-grid` = 4 colunas · `.c-home-section-seduc` = 2 colunas → **dash=4 e sistemas=2 na mesma linha**, cards de tamanho parecido. Se os dashboards voltarem a 3, o layout de 28/09 era `1fr 1fr` com 3 + 3 colunas (2 cards + 1 vazio nos sistemas).
   - `.c-home-section-drive .c-home-grid` = 5 colunas (10 cards = 5 + 5).
 
-## Estado atual dos cards (14/09/2026)
+## Estado atual dos cards (02/10/2026)
 - **seduc (2):** Escola Total · Atendimento. *(Repositório SEDUC foi removido.)*
-- **dashboards (3):** Inscrições ENEM 2026 · Painel da Jornada do Provão (https://jornada-provao.vercel.app) · **Simulado SARESP 2º ano EF** (https://simulado-saresp-2ef.vercel.app, entrou em 14/09).
+- **dashboards (4):** Inscrições ENEM 2026 · Painel da Jornada do Provão (https://jornada-provao.vercel.app) · **Simulado SARESP 2º ano EF** (https://simulado-saresp-2ef.vercel.app, entrou em 14/09) · **SARESP 2026** (https://saresp26-gzfncd52.manus.space, entrou em 02/10 a pedido do Jeff: painel de recursos, manuais e formações para supervisores, hospedado no Manus, fora da Vercel da DIAVAL).
 - **Próximas avaliações** (`src/calendar.ts`, 28/09/2026): uma linha por ano/série, com as datas da tabela de
   avaliações do Painel da Jornada do Provão (`S:2026_jornada_provao\jornada-provao\index.html`, const `AVAL`).
   Recuperação (7-11/dez) vem do Calendário Pedagógico. Se a Jornada mudar data, mudar aqui também.
