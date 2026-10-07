@@ -40,4 +40,5 @@ O deploy faz alias automático para https://diaval-hub.vercel.app. Como `C:\dev\
 
 ## Notas
 - Sem env vars no deploy; CSS do design-system inlinado em `src/design-system.css`.
+- **Cache (07/10/2026):** `vercel.json` põe `/assets/*` como `immutable` (1 ano) e o favicon em 7 dias. O HTML continua revalidando. Motivo: o portal era ~59% das requests de CDN do team `diaval-seduc-sp` (Hobby, teto de 1 milhão por ciclo) e cada visita disparava 4 requests. Não tirar.
 - Ver também README.md (stack e origem).
