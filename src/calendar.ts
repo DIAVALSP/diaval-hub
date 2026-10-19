@@ -127,11 +127,11 @@ export const EVENTS: CalendarEvent[] = [
   // (jornada-provao.vercel.app). Recuperação segue o Calendário Pedagógico.
   {
     id: 'saresp-9ef',
-    dateLabel: '29–30/out',
+    dateLabel: '28–29/out',
     title: '9º ano EF',
     type: 'saresp',
-    start: '2026-10-29',
-    end: '2026-10-30',
+    start: '2026-10-28',
+    end: '2026-10-29',
   },
   {
     id: 'provao-3em',
