@@ -256,7 +256,7 @@ export const EVENTS: CalendarEvent[] = [
   {
     id: 'extra-ef',
     dateLabel: '2–3/dez',
-    title: '2º, 5º e 6º a 9º ano EF',
+    title: '6º, 7º e 8º ano EF',
     type: 'extra',
     start: '2026-12-02',
     end: '2026-12-03',
@@ -272,7 +272,7 @@ export const EVENTS: CalendarEvent[] = [
   {
     id: 'extra-em',
     dateLabel: '4/dez',
-    title: '2ª e 3ª série EM',
+    title: '2ª e 3ª série EM · Itinerários',
     type: 'extra',
     start: '2026-12-04',
     end: '2026-12-04',
