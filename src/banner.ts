@@ -4,18 +4,18 @@ export interface Banner {
   lines: string[]
 }
 
-// 28/09/2026: frase fixa, no texto do Jeff (ele preferiu uma contagem só, em vez de uma por prova).
+// 20/10/2026: reforço do Simulado do ENEM da 3ª série (prazo da Jornada do Provão: cartões lidos até 23/10).
 
 /**
  * Mensagem informativa exibida no topo do portal.
  * Trocar conteúdo aqui quando a mensagem da semana mudar.
  */
 export const BANNER: Banner = {
-  icon: '🏁',
+  icon: '📝',
   lines: [
-    'Faltam 30 dias para SARESP, Provão e ENEM!',
-    'Agora é sprint final! 🚀 Traga universidades e universitários para inspirar a turma, confira com cada ' +
-      'estudante onde ele faz o ENEM, aplique o simulado, passe as últimas dicas de prova e capriche no treino ' +
-      'de redação. Meta da escola: ninguém fica de fora no dia da prova!',
+    'Simulado do ENEM: a 3ª série tem até sexta, 23/10, para fazer a prova!',
+    'Garanta que todo estudante da 3ª série faça os dois dias: Dia 1 com Linguagens, Humanas e Redação, e Dia 2 ' +
+      'com Natureza e Matemática. O cartão-resposta lido até 23/10 conta para a Jornada do Provão. Depois, use o ' +
+      'resultado para revisar com a turma antes do ENEM, em 8 e 15/11.',
   ],
 }
