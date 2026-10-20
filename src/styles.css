@@ -348,15 +348,6 @@ details.c-home-section[open] .c-home-section-summary {
 .c-cal-enem { border-left-color: var(--purple-dark); }
 .c-cal-enem .c-cal-tag { background: var(--purple-light); color: var(--purple-dark); }
 
-.c-cal-extra { border-left-color: var(--gray-dark); }
-.c-cal-extra .c-cal-tag { background: var(--gray-light); color: var(--gray-dark); }
-
-.c-cal-aprofundamento { border-left-color: var(--green); }
-.c-cal-aprofundamento .c-cal-tag { background: var(--green-light); color: var(--green-dark); }
-
-.c-cal-fechamento { border-left-color: var(--blue); }
-.c-cal-fechamento .c-cal-tag { background: var(--blue-pale); color: var(--blue-dark); }
-
 /* Eventos passados — mais discretos */
 .c-home-section-h-muted {
   color: var(--text-muted);

@@ -8,9 +8,6 @@ export type EventType =
   | 'provao'
   | 'recuperacao'
   | 'enem'
-  | 'extra'
-  | 'aprofundamento'
-  | 'fechamento'
 
 export interface CalendarEvent {
   id: string
@@ -32,9 +29,6 @@ const EVENT_TYPE_LABEL: Record<EventType, string> = {
   provao: 'Provão Paulista',
   recuperacao: 'Recuperação',
   enem: 'ENEM',
-  extra: 'Aplicação extra',
-  aprofundamento: 'Aprofundamento',
-  fechamento: 'Fechamento',
 }
 
 export function eventTypeLabel(type: EventType): string {
@@ -187,16 +181,8 @@ export const EVENTS: CalendarEvent[] = [
     start: '2026-11-12',
     end: '2026-11-13',
   },
-  // 20/10/2026: quadro semanal do Jeff (S:2026_calendario_avaliacoes). SARESP do 6º ao 8º separado por ano,
-  // aplicações extra, aprofundamento, recuperação, repescagem e fechamento da proposta nova do 4º bimestre.
-  {
-    id: 'extra-3em',
-    dateLabel: '16–17/nov',
-    title: '3ª série EM',
-    type: 'extra',
-    start: '2026-11-16',
-    end: '2026-11-17',
-  },
+  // 20/10/2026: quadro semanal do Jeff (S:2026_calendario_avaliacoes). SARESP do 6º ao 8º separado por ano e
+  // recuperação da proposta nova do 4º bimestre. Extra, aprofundamento, repescagem e fechamento ficam só no Excel.
   {
     id: 'saresp-6ef',
     dateLabel: '18–19/nov',
@@ -212,14 +198,6 @@ export const EVENTS: CalendarEvent[] = [
     type: 'saresp',
     start: '2026-11-23',
     end: '2026-11-23',
-  },
-  {
-    id: 'aprofundamento',
-    dateLabel: '23–30/nov',
-    title: '',
-    type: 'aprofundamento',
-    start: '2026-11-23',
-    end: '2026-11-30',
   },
   {
     id: 'saresp-2ef',
@@ -254,44 +232,12 @@ export const EVENTS: CalendarEvent[] = [
     end: '2026-12-01',
   },
   {
-    id: 'extra-ef',
-    dateLabel: '2–3/dez',
-    title: '6º, 7º e 8º ano EF',
-    type: 'extra',
-    start: '2026-12-02',
-    end: '2026-12-03',
-  },
-  {
     id: 'recuperacao',
     dateLabel: '2–4 e 7/dez',
     title: 'Todas as séries',
     type: 'recuperacao',
     start: '2026-12-02',
     end: '2026-12-07',
-  },
-  {
-    id: 'extra-em',
-    dateLabel: '4/dez',
-    title: '2ª e 3ª série EM · Itinerários',
-    type: 'extra',
-    start: '2026-12-04',
-    end: '2026-12-04',
-  },
-  {
-    id: 'repescagem',
-    dateLabel: '8/dez',
-    title: 'Repescagem',
-    type: 'recuperacao',
-    start: '2026-12-08',
-    end: '2026-12-08',
-  },
-  {
-    id: 'fechamento',
-    dateLabel: '7–17/dez',
-    title: 'Professor · fim do 4º bimestre em 18/dez',
-    type: 'fechamento',
-    start: '2026-12-07',
-    end: '2026-12-17',
   },
 ]
 
