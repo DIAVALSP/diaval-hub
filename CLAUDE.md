@@ -14,9 +14,7 @@
 ## Estado atual dos cards (02/10/2026)
 - **seduc (2):** Escola Total · Atendimento. *(Repositório SEDUC foi removido.)*
 - **dashboards (4):** Inscrições ENEM 2026 · Painel da Jornada do Provão (https://jornada-provao.vercel.app) · **Simulado SARESP 2º ano EF** (https://simulado-saresp-2ef.vercel.app, entrou em 14/09) · **SARESP 2026** (https://saresp26-gzfncd52.manus.space, entrou em 02/10 a pedido do Jeff: painel de recursos, manuais e formações para supervisores, hospedado no Manus, fora da Vercel da DIAVAL).
-- **Próximas avaliações** (`src/calendar.ts`, 28/09/2026): uma linha por ano/série, com as datas da tabela de
-  avaliações do Painel da Jornada do Provão (`S:2026_jornada_provao\jornada-provao\index.html`, const `AVAL`).
-  Recuperação (7-11/dez) vem do Calendário Pedagógico. Se a Jornada mudar data, mudar aqui também.
+- **Próximas avaliações** (`src/calendar.ts`): uma linha por ano/série. **Até 13/nov** as datas vêm da tabela de avaliações do Painel da Jornada do Provão (`S:2026_jornada_provao\jornada-provao\index.html`, const `AVAL`). **Do fim do ano (16/nov a 17/dez)** vêm do quadro semanal `S:2026_calendario_avaliacoes` (20/10/2026): SARESP por ano, aplicações extra, aprofundamento, recuperação (01/12 EM; 02 a 04 e 07/12 geral), repescagem (08/12) e fechamento. Se uma das fontes mudar, mudar aqui também. Tipos `extra`, `aprofundamento` e `fechamento` entraram em 20/10, com cor em `styles.css` (`.c-cal-<tipo>`).
 - **Faixa laranja** (`src/banner.ts`): frase FIXA do Jeff, "Faltam 30 dias para SARESP, Provão e ENEM!" (28/09). Não se atualiza sozinha:
   trocar à mão quando a mensagem mudar.
 - **Avaliação Diagnóstica 2026.2 saiu do portal em 28/09/2026**, a pedido do Jeff. O app segue em aplicacao-avd2.vercel.app.
